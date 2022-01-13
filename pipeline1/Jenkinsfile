@@ -4,9 +4,10 @@ pipeline {
   stages {
     stage('Build for production') {
       steps {
+        checkout scm
         sh 'ls -lah'
 	sh 'pwd'
-	git url: 'https://github.com/jtokarski/frontdev1.git'
+	//git url: 'https://github.com/jtokarski/frontdev1.git'
         echo 'Building Application'
       }
     }
