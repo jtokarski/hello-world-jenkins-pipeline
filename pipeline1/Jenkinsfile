@@ -1,0 +1,18 @@
+pipeline {
+  agent any
+
+  stages {
+    stage('Build for production') {
+      steps {
+        echo 'Building Application'
+      }
+    }
+
+    stage('End-to-end test') {
+      steps {
+        echo 'Running Cypress'
+      }
+    }
+  }
+}
+
