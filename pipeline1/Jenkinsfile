@@ -4,6 +4,8 @@ pipeline {
   stages {
     stage('Build for production') {
       steps {
+        sh 'ls -lah'
+	sh 'pwd'
         echo 'Building Application'
       }
     }
