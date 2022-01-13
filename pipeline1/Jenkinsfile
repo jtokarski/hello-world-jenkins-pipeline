@@ -1,5 +1,7 @@
 pipeline {
-  agent any
+  agent {
+    label 'a001'
+  }
 
   stages {
     stage('Build for production') {
